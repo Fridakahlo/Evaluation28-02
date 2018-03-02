@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Mon budget mensuel</title>
+	<!-- css-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+
+	
+	<!-- js that adds extra inputs-->
+	<script type="text/javascript">
+	function add()
+	    {
+	    var input = addInput.innerHTML
+	    addInput.innerHTML = input + '<input type="text" placeholder="Ecris ici"><input type="text" value="0" id="addInputNumber"/>€<br/>\n';
+	    }
+	function addCharges()
+	    {
+	    var input = addInputCharges.innerHTML
+	    addInputCharges.innerHTML = input + '<input type="text" placeholder="Ecris ici"><input type="text" value="0"/>€<br/>\n';
+	    }
+	function addEntrys()
+	    {
+	    var input = addInputEntrys.innerHTML
+	    addInputEntrys.innerHTML = input + '<input type="text" placeholder="Ecris ici"><input type="text" value="0"/>€<br/>\n';
+	    }
+	</script>
+	<!-- end of js that adds extra inputs-->
+
+</head>
+
+<body>
+	<!-- <div class="container-fluid red"> -->
+		<div class="container">
+			<form class="row">
+				
+				
+					<div class="col-sm-12 text-center">
+						<h1>Mon Budget Mensuel</h1>
+					</div>
+					
+					<div class="col-sm-12">
+						<h2>Mes Ressources</h2>
+
+
+						<div class="row justify-content-between">
+						    <label class="col-6">Salaires</label>
+						    <div class="col-4">
+						      <input type="text" class="salary" id="inputSalary" value="0" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Allocations diverses</label>
+						    <div class="col-4">
+						      <input type="text" class="allowance" value="0" id="inputAllowance" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Rentes</label>
+						    <div class="col-4">
+						      <input type="text" class="annuities" value="0" id="inputAnnuities" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Autres</label>
+						    <div class="col-4">
+						      <input type="text" class="othersMeans" value="0" id="inputOthersMeans" >€
+						    </div>
+						</div>
+						
+						<div id="addInputEntrys"></div>
+						<input type="button" class="btn btn-success" value="Ajouter" onClick="addEntrys();"><br><br><br>
+
+					</div>
+				
+
+				<!-- <div class="row"> -->
+										
+					<div class="col-sm-12">
+						<h2>Mes Dépenses Fixes</h2>
+
+						<div class="row justify-content-between">
+						    <label class="col-6">Loyer habitation*</label>
+						    <div class="col-4">
+						      <input type="text" class="rental" value="0" id="inputRental" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Charges habitation</label>
+						    <div class="col-4">
+						      <input type="text" class="charges" value="0" id="inputCharges" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Gas, électricité, eau*</label>
+						    <div class="col-4">
+						      <input type="text" class="energy" value="0" id="inputEnergy" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Abonnements TV, téléphone, internet*</label>
+						    <div class="col-4">
+						      <input type="text" class="telecoms" value="0" id="inputTelecoms" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Impôts sur le révenu</label>
+						    <div class="col-4">
+						      <input type="text" class="taxes" value="0" id="inputTaxes" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Taxe habitation</label>
+						    <div class="col-4">
+						      <input type="text" class="housingTax" value="0" id="inputHousingTax" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Taxe foncière</label>
+						    <div class="col-4">
+						      <input type="text" class="propertyTax" value="0" id="inputPropertyTax" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Assurance habitation</label>
+						    <div class="col-4">
+						      <input type="text" class="homeInsurance" value="0" id="inputHomeInsurance" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Assurance voiture</label>
+						    <div class="col-4">
+						      <input type="text" class="carInsurance" value="0" id="inputCarAssurance" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Mutuelle</label>
+						    <div class="col-4">
+						      <input type="text" class="mutual" value="0" id="inputMutual" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Frais de scolarité/garde</label>
+						    <div class="col-4">
+						      <input type="text" class="scolarity" value="0" id="inputScolarity" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Remboursement crédits</label>
+						    <div class="col-4">
+						      <input type="text" class="credits" value="0" id="inputCredits" >€
+						    </div>
+						</div>
+						<p>*Champs obligatoires</p>
+						
+						<div id="addInputCharges"></div>
+						<input type="button" class="btn btn-success" value="Ajouter" onClick="addCharges();"><br><br><br>
+					</div>
+				
+
+				<!-- <div class="row"> -->
+										
+					<div class="col-sm-12">
+						<h2>Mes Dépenses Courantes</h2>
+
+						<div class="row justify-content-between">
+						    <label class="col-6">Alimentation hebdomadaire</label>
+						    <div class="col-4">
+						      <input type="text" class="feed" value="0" id="inputFeed" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Transport, essence hebdomadaire</label>
+						    <div class="col-4">
+						      <input type="text" class="transport" value="0" id="inputTransport" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Activités sportives/culturelles annuelles</label>
+						    <div class="col-4">
+						      <input type="text" class="sport" value="0" id="inputsSport" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Sorties hebdomadaires</label>
+						    <div class="col-4">
+						      <input type="text" class="fun" value="0" id="inputFun" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Santé/higiène</label>
+						    <div class="col-4">
+						      <input type="text" class="health" value="0" id="inputHealth" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Habillement</label>
+						    <div class="col-4">
+						      <input type="text" class="clothes" value="0" id="inputClothes" >€
+						    </div>
+						</div>
+						<div class="row justify-content-between">
+						    <label class="col-6">Autres</label>
+						    <div class="col-4">
+						      <input type="text" class="othersExpenses" value="0" id="inputOthersExpenses" >€
+						    </div>
+						</div>
+						
+						<div id="addInput"></div>
+						<input type="button" class="btn btn-success" value="Ajouter" onClick="add();"><br><br><br>
+
+					<div class="col-sm-12">
+						<h2>Mon Epargne</h2>
+
+						<div class="row justify-content-between">
+						    <label class="col-6">Epargne</label>
+						    <div class="col-4">
+						      <input type="text" class="feed" value="0" id="inputSaving" >€<br><br><br>
+						    </div>
+						</div>
+					</div>
+ 					<div class="text-center">
+						<button type="submit" class="btn btn-primary btn-lg" id="button">Valider</button><br><br>
+						
+						<INPUT id ="results" TYPE="text" NAME="output" VALUE="0">€<br><br>
+   
+						<!-- <div class="result">
+							<span id="result"></span>€
+							
+						</div> -->
+ 
+						<div>
+						    <button type="reset" class="btn btn-outline-danger">Tout effacer</button>
+						</div>
+					</div>	
+					</div>
+						
+		</form>	
+	</div>
+
+	<script src="node_modules/jquery/dist/jquery.js"></script>
+	<script src="js/app.js"></script>
+</body>
+</html>
